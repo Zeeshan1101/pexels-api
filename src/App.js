@@ -11,8 +11,7 @@ const App = () => {
       `https://api.pexels.com/v1/search?query=${keyword}&per_page=15`,
       {
         headers: {
-          Authorization:
-            '563492ad6f91700001000001825d31c88aa7494ab0735aa3a10e9c92',
+          Authorization: process.env.PEXELS_KEY,
         },
       }
     );
